@@ -1,10 +1,21 @@
 {
   "files": [],
-  "references": [
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" }
-  ],
+  "references": [{ "path": "./tsconfig.app.json" }],
   "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "@ui/*": ["packages/ui/src/*"],
+      "@hooks/*": ["packages/hooks/src/*"],
+      "@store/*": ["packages/store/src/*"],
+      "@types/*": ["packages/types/src/*"],
+      "@utils/*": ["packages/utils/src/*"],
+      "@assets/*": ["packages/assets/*"]
+    },
+    "jsx": "react-jsx",
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "node",
     "forceConsistentCasingInFileNames": true
   }
 }
