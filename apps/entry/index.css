@@ -1,0 +1,46 @@
+@font-face {
+  font-family: 'PretendardVariable';
+  src: url('./fonts/PretendardVariable.woff2') format('woff2');
+  font-weight: 100 900;
+  font-display: swap;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  @apply custom-scrollbar;
+}
+
+/* 커스텀 세로 스크롤바 */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #dadfe7;
+  border-radius: 2px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 10px;
+}
+
+/* 모든 input, select, textarea의 브라우저 기본 outline,그림자 제거 */
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/* svg 애니메이션 비활성화 */
+.stop-animation {
+  animation: none !important;
+}
+
+.stop-animation * {
+  animation: none !important;
+}
