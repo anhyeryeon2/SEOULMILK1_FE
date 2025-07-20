@@ -26,7 +26,6 @@ import AdminTax from '../pages/ADMIN/tax';
 import AdminPayment from '../pages/ADMIN/payment';
 import AdminPaymentDetail from '../pages/ADMIN/paymentDetail/AdminPaymentDetail';
 
-// TODO: 직접 URL 수정으로 다른 role 페이지 이동 막기
 
 const WebRouter = createBrowserRouter([
   // 기본 경로를 로그인
